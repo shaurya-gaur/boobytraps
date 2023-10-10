@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+    </header>
+    <main>
+        <div class="user-form" id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="user-form" id="signup-form">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="comment-form">
+            <h2>Add a Comment</h2>
+            <textarea id="comment-text" rows="4" placeholder="Enter your comment"></textarea>
+            <button id="submit-comment">Submit</button>
+        </div>
+        <div class="comments">
+            <h2>Comments</h2>
+            <ul id="comment-list"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
